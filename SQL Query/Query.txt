@@ -1,0 +1,21 @@
+-- Create the 'atm' database
+CREATE DATABASE atm;
+
+-- Use the 'atm' database
+USE atm;
+
+-- Create the 'accounts' table
+CREATE TABLE accounts (
+    account_number INT PRIMARY KEY,
+    pin INT NOT NULL,
+    balance DOUBLE NOT NULL,
+    namee VARCHAR(20));
+);
+
+-- Insert sample data
+INSERT INTO accounts (account_number, pin, balance,namee) VALUES
+    (123456, 1234, 10000,'Mohamed Ibrahim'),
+    (789012, 5678, 50000,'Kalith');
+    
+select * from accounts;
+drop table accounts;
